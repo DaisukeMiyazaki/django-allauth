@@ -40,7 +40,7 @@ cache:
 
 install:
   - if [[ $TOXENV == "standardjs" ]]; then nvm install 8; fi
-  - pip install --upgrade pip wheel setuptools
+  - pip install --upgrade pip wheel setuptools==60.10.0
   - pip install coveralls tox
 
 script:
